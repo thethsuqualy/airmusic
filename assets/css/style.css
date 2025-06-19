@@ -1362,7 +1362,7 @@ Top Page
     .airmusic-h1 {
         font-family: 'Poppins';
         font-size: 50px;
-        margin: 100px 0 41px 0;
+        margin: 30px 0 41px 0;
     }
 
     .airmusic-p {
@@ -1414,7 +1414,7 @@ Top Page
     }
 
     .feature-section {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .faq-circle {
@@ -1458,6 +1458,10 @@ Top Page
 
     .price {
         margin: 25px 0 30px 0;
+    }
+
+    .order {
+        margin: 0 auto 60px auto;
     }
 
     .contact-h2::after {
@@ -1549,17 +1553,20 @@ Top Page
     .feature-section {
         padding-top: 170px;
     }
+
+    .send-btn {
+        margin: 25px auto 0px auto;
+    }
+
+    .contact-p {
+        margin: 28px 0 20px 0;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .absolute-airpod {
         top: 80px;
     }
-
-    .feature-section {
-        padding-top: 200px;
-    }
-
     .footer-sp-img {
         max-width: 150px;
         height: 130px;
@@ -1585,7 +1592,7 @@ Top Page
     .airmusic-h1 {
         font-family: 'Poppins';
         font-size: 28px;
-        margin: 50px 0 21px 0;
+        margin: 30px 0 21px 0;
     }
 
     .airpod-case {
@@ -1663,20 +1670,12 @@ Top Page
         margin-bottom: 15px;
     }
 
-    .contact-p {
-        margin: 28px 0 20px 0;
-    }
-
     .contact-box {
         height: 40px;
     }
 
     .contact-box.wider {
         height: 210px;
-    }
-
-    .send-btn {
-        margin: 25px auto 0px auto;
     }
 }
 

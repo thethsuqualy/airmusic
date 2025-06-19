@@ -1,0 +1,1656 @@
+@charset "utf-8";
+
+/* ===============================
+Top Page
+=============================== */
+.header-section {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.header {
+    padding: 10px 140px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8FAFE;
+}
+
+/* .header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.header-h1 {
+    font-family: 'Nexa';
+    font-size: 68px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.menu-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 44px 0 34px 0;
+    align-items: center;
+}
+
+.menu-pc {
+    display: flex;
+    gap: 39px;
+}
+
+.menu-a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.menu-a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+}
+
+.menu-a.active::before {
+    background: linear-gradient(to right, #72A1FF, #C898FF);
+}
+
+.menu-sp {
+    display: none;
+}
+
+.menu-btn {
+    width: 212px;
+    padding: 20px 50px;
+    border-radius: 37px;
+    border: 1px solid #000000;
+    margin: 25px 0 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2nd start */
+.airmusic-img {
+    max-width: 920px;
+    background: no-repeat;
+    background-size: contain;
+}
+
+.airmusic {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.airmusic-content {
+    width: calc(100% - 920px);
+}
+
+.inner-airmusic {
+    margin-left: 140px;
+}
+
+.airmusic-h1 {
+    font-family: 'Poppins';
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 201px 0 51px 0;
+}
+
+.airmusic-p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.5;
+    margin-bottom: 66px;
+
+}
+
+.order-btn {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #72A1FF, #C898FF);
+    border-radius: 37px;
+    border: 1px solid #707070;
+    max-width: 276px;
+    padding: 24px;
+    text-align: center;
+}
+
+.airmusic-circle {
+    width: 297px;
+    height: 150px;
+    background-size: contain;
+    margin-top: 96px;
+}
+
+/* 3rd start */
+.specifications {
+    background: url(../img/rain.png) no-repeat;
+    background-size: cover;
+    height: 813px;
+}
+
+.specifications-content {
+    max-width: 806px;
+    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.specifications-h3 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 700;
+    padding: 197px 0 56px 0;
+}
+
+.specifications-p {
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.absolute-airpod {
+    max-width: 626px;
+    margin: 0 auto;
+    z-index: 1999;
+    position: relative;
+}
+
+/* 4th start */
+.feature-wave {
+    background: url(../img/feature-wave.png) no-repeat;
+    background-size: contain;
+    width: 470px;
+    height: 463px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.feature-section {
+    background-color: #F8FAFE;
+    padding-top: 268px;
+    position: relative;
+
+}
+
+.feature-h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    padding-left: 41px;
+}
+
+.feature {
+    max-width: 1400px;
+    padding: 0 20px 179px 20px;
+    margin: 0 auto;
+}
+
+.inner-feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.feature-card {
+    max-width: 420px;
+    background-color: #ffff;
+    border-radius: 19px;
+    border: 1px #707070;
+    cursor: pointer;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 68px 49px 43px 50px;
+    text-align: center;
+}
+
+.feature-label {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 700;
+    margin: 46px 0 20px 0;
+}
+
+.feature-p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.1;
+}
+
+.feature-img.phone {
+    background: url(../img/phone.png) no-repeat;
+    background-size: contain;
+    width: 68px;
+    height: 90px;
+}
+
+.feature-img.sound {
+    background: url(../img/sound.png) no-repeat;
+    background-size: contain;
+    width: 108px;
+    height: 84px;
+}
+
+.feature-img.music {
+    background: url(../img/music.png) no-repeat;
+    background-size: contain;
+    width: 103px;
+    height: 92px;
+}
+
+.feature-img.lightstick {
+    background: url(../img/lightstick-black.png) no-repeat;
+    background-size: contain;
+    width: 123px;
+    height: 111px;
+}
+
+.feature-img.mic {
+    background: url(../img/mic.png) no-repeat;
+    background-size: contain;
+    width: 99px;
+    height: 102px;
+}
+
+.feature-img.star {
+    background: url(../img/star.png) no-repeat;
+    background-size: contain;
+    width: 108px;
+    height: 92px;
+}
+
+.colorbar {
+    width: 100%;
+    height: 32px;
+    background-color: #ffff;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    cursor: pointer;
+}
+
+.feature-card:hover .colorbar {
+    cursor: pointer;
+    background: linear-gradient(to right, #72A1FF, #C898FF);
+}
+
+.feature-card:hover .phone {
+    background: url(../img/phone-hover.png) no-repeat;
+    background-size: contain;
+}
+
+.feature-card:hover .sound {
+    background: url(../img/sound-hover.png) no-repeat;
+    background-size: contain;
+}
+
+.feature-card:hover .music {
+    background: url(../img/music-hover.png) no-repeat;
+    background-size: contain;
+}
+
+.feature-card:hover .lightstick {
+    background: url(../img/lightstick-hover.png) no-repeat;
+    background-size: contain;
+}
+
+.feature-card:hover .mic {
+    background: url(../img/mic-hover.png) no-repeat;
+    background-size: contain;
+}
+
+.feature-card:hover .star {
+    background: url(../img/star-hover.png) no-repeat;
+    background-size: contain;
+}
+
+/* 5th start */
+.airpod-case {
+    max-width: 400px;
+    height: 400px;
+    margin-top: -100px;
+    position: absolute;
+    top: -43px;
+    left: 130px;
+}
+
+.faq-section {
+    position: relative;
+    margin-bottom: 134px;
+}
+
+.faq {
+    max-width: 1135px;
+    padding: 226px 20px 0 20px;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.faq-h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.faq-p {
+    max-width: 899px;
+    margin: 15px auto 46px auto;
+}
+
+.accordion {
+    display: flex;
+    gap: 27px;
+    max-width: 1095px;
+    width: 100%;
+}
+
+.accordion-column {
+    max-width: 519px;
+    width: 100%;
+}
+
+.accordion-item {
+    overflow: hidden;
+    border-radius: 11px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+    margin-bottom: 27px;
+}
+
+.accordion-item.open .accordion-content {
+    border-top: 1px solid #000000;
+}
+
+.accordion-header {
+    position: relative;
+    padding: 16px 26px 16px 73px;
+    cursor: pointer;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-content {
+    display: none;
+    padding: 31px 74px 18px 70px;
+    background-color: #FFFFFF;
+    border-top: 1px solid;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.accordion-header::before {
+    content: '';
+    background: url(../img/v.png) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 17px;
+    top: 26px;
+}
+
+.accordion-header::after {
+    content: '';
+    background: url(../img/Line.png) no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 19px;
+    color: black;
+}
+
+.accordion-header.active::before {
+    content: '';
+    background: url(../img/v-hover.png) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+.faq-circle {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 400px;
+    right: 0;
+}
+
+/* 6th start */
+.order {
+    max-width: 1820px;
+    padding: 0 20px;
+    margin: 0 auto 144px auto;
+    display: flex;
+}
+
+.order-img {
+    max-width: 954px;
+}
+
+.order-content {
+    width: calc(100% - 954px);
+    padding: 0 20px;
+}
+
+.order-h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 218px;
+}
+
+.order-p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.5;
+    margin: 36px 0 22px 0;
+}
+
+.selectcolor {
+    display: flex;
+    gap: 41px;
+}
+
+.selectcolor-label {
+    font-family: 'Poppins';
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.selectcolor-img {
+    width: 150px;
+    height: 22px;
+}
+
+.price {
+    display: flex;
+    gap: 25px;
+    margin: 32px 0 36px 0;
+}
+
+.price-1x {
+    font-family: 'Poppins';
+    font-size: 37px;
+    font-weight: 300;
+    padding: 6px 20px;
+    border: 1px solid;
+    border-radius: 11px;
+}
+
+.price-label {
+    font-family: 'Poppins';
+    font-size: 58px;
+    font-weight: 700;
+}
+
+/* 7th start */
+.grid-template-area {
+    max-width: 1920px;
+    margin: 0 auto 136px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "one one two three"
+        "one one four five";
+}
+
+.grid-area.one {
+    grid-area: one;
+}
+
+.grid-area.two {
+    grid-area: two;
+}
+
+.grid-area.three {
+    grid-area: three;
+}
+
+.grid-area.four {
+    grid-area: four;
+}
+
+.grid-area.five {
+    grid-area: five;
+}
+
+.grid-area img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+/* 8th start */
+
+.contact {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto 63px auto;
+}
+
+.upper-content {
+    max-width: 890px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.contact-h2::before {
+    content: '';
+    background: url(../img/contact-before.png) no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    top: 19px;
+    left: 50px;
+    display: block;
+}
+
+.contact-h2::after {
+    content: '';
+    background: url(../img/contact-before.png) no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    top: 19px;
+    right: 40px;
+}
+
+.contact-p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    margin: 28px 0 42px 0;
+    line-height: 1.8;
+}
+
+.contact-label {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contact-box {
+    max-width: 519px;
+    height: 68px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 11px;
+}
+
+.contact-box.wider {
+    max-width: 1079px;
+    height: 311px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 27px;
+}
+
+.input-group-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 41px;
+}
+
+.send-btn {
+    max-width: 276px;
+    padding: 20px;
+    border-radius: 37px;
+    background: linear-gradient(to right, #72A1FF, #C898FF);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    margin: 53px auto 0px auto;
+}
+
+/* 9th start */
+.footer-section {
+    margin-top: 10px;
+}
+
+.footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-left {
+    background: url(../img/footer-airpod2.png) no-repeat;
+    background-size: contain;
+    display: block;
+    width: 540px;
+    height: 380px;
+    position: absolute;
+    top: 10px;
+}
+
+.footer-right {
+    width: 490px;
+    height: 380px;
+    background: url(../img/wave1.png) no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.airpods-black {
+    max-width: 216px;
+    height: 216px;
+    margin-bottom: 22px;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+.mid-p {
+    width: 630px;
+    border-top: 1px solid;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 14px;
+    margin: 20px 0 27px 0;
+}
+
+.ficon {
+    width: 33px;
+    height: 33px;
+}
+
+.topbtn-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-btn {
+    width: 100px;
+    height: fit-content;
+    background-size: contain;
+    position: sticky;
+    bottom: 40px;
+    cursor: pointer;
+    right: 20px;
+    display: block;
+    border-radius: 10px;
+    z-index: 3;
+    margin-left: auto;
+}
+
+.top-btn.nottop {
+    display: none;
+}
+
+.footer-sp {
+    display: none;
+}
+
+@media screen and (max-width: 1730px) {
+    .airmusic-content {
+        width: calc(100% - 700px);
+    }
+
+    .inner-airmusic {
+        margin-left: 100px;
+    }
+
+    .airmusic-img {
+        max-width: 700px;
+    }
+
+    .faq-circle {
+        width: 220px;
+        top: 450px;
+    }
+
+    .order-img {
+        max-width: 800px;
+    }
+
+    .order-content {
+        width: calc(100% - 800px);
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .footer-left {
+        width: 510px;
+        height: 320px;
+        top: 36px;
+    }
+
+    .footer-right {
+        width: 420px;
+        bottom: -20px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .faq-circle {
+        width: 170px;
+        height: 300px;
+        top: 555px;
+    }
+
+    .airmusic-h1 {
+        margin: 140px 0 31px 0;
+        font-size: 50px;
+    }
+
+    .airmusic-p {
+        margin-bottom: 40px;
+    }
+
+    .menu-pc {
+        display: none;
+    }
+
+    .header {
+        padding: 19px 15px 22px 15px;
+        position: fixed;
+        width: 100%;
+        z-index: 3000;
+
+    }
+
+    .header-h1 {
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger {
+        width: 32px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger .bar {
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        background-color: #72A1FF;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(18px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-18px);
+    }
+
+    .menu-sp {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 112px;
+        left: 0;
+        z-index: 3000;
+        background-color: #FFFFFF;
+    }
+
+    .menu-link {
+        display: flex;
+        flex-direction: column;
+        padding: 29px 20px;
+    }
+
+    .menu-a {
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        padding: 10px 0;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .menu-a::after {
+        content: '';
+        background: url(../img/arrow.png) no-repeat;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .menu-a.active::before {
+        background: none;
+    }
+
+    .menu-sp.show {
+        display: block;
+    }
+
+    .main {
+        position: relative;
+        top: 112px;
+    }
+
+    .order-img {
+        max-width: 600px;
+    }
+
+    .order-content {
+        width: calc(100% - 600px);
+        padding: 0 20px;
+    }
+
+    .order-h2 {
+        margin-top: 160px;
+    }
+
+    .order-p {
+        margin: 30px 0 22px 0;
+    }
+
+    .selectcolor-img {
+        width: 120px;
+        height: 18px;
+    }
+
+    .price {
+        display: flex;
+        gap: 25px;
+        margin: 25px 0 30px 0;
+    }
+
+    .price-1x {
+        font-size: 30px;
+        padding: 6px 20px;
+    }
+
+    .price-label {
+        font-size: 50px;
+    }
+
+    .footer-left {
+        width: 380px;
+        height: 280px;
+        top: 110px;
+    }
+
+    .mid-p {
+        width: 530px;
+    }
+
+    .footer-right {
+        width: 320px;
+        bottom: 0px;
+        height: 230px;
+    }
+
+    .contact-section {
+        padding-bottom: 63px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1315px) {
+    .airmusic-content {
+        width: calc(100% - 500px);
+    }
+
+    .inner-airmusic {
+        margin-left: 60px;
+    }
+
+    .airmusic-img {
+        max-width: 500px;
+    }
+
+    .airmusic-h1 {
+        margin: 100px 0 21px 0;
+        font-size: 40px;
+    }
+
+    .airmusic-p {
+        margin-bottom: 20px;
+    }
+
+    .absolute-airpod {
+        max-width: 526px;
+        top: 55px;
+    }
+
+    .feature-wave {
+        width: 300px;
+        height: 297px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .airpod-case {
+        max-width: 300px;
+        height: 300px;
+        left: 110px;
+        margin-top: -70px;
+    }
+
+    .faq {
+        padding: 166px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .feature-content {
+        padding: 48px 15px 43px 15px;
+    }
+
+    .feature-label {
+        font-size: 30px;
+        margin: 30px 0 20px 0;
+    }
+
+    .inner-feature {
+        gap: 20px;
+    }
+
+    .order {
+        margin: 0 auto 80px auto;
+    }
+
+    .order-img {
+        max-width: 450px;
+    }
+
+    .order-content {
+        width: calc(100% - 450px);
+        padding: 0 0 0 20px;
+    }
+
+    .order-h2 {
+        margin-top: 110px;
+    }
+
+    .order-p {
+        margin: 30px 0 22px 0;
+        line-height: 2;
+    }
+
+    .selectcolor-img {
+        width: 120px;
+        height: 18px;
+    }
+
+    .price {
+        display: flex;
+        gap: 25px;
+        margin: 15px 0 20px 0;
+    }
+
+    .price-1x {
+        font-size: 25px;
+        padding: 6px 20px;
+    }
+
+    .price-label {
+        font-size: 40px;
+    }
+
+    .grid-template-area {
+        margin: 0 auto 75px auto;
+    }
+
+    .airpods-black {
+        height: 200px;
+        margin-bottom: 0;
+    }
+
+    .footer-left {
+        width: 300px;
+        height: 200px;
+        top: 124px;
+    }
+
+    .mid-p {
+        width: 430px;
+    }
+
+    .footer-right {
+        width: 220px;
+        bottom: 0px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .feature-content {
+        padding: 10px 15px 20px 15px;
+    }
+
+    .feature-label {
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+
+    .airmusic-content {
+        width: calc(100% - 450px);
+    }
+
+    .inner-airmusic {
+        margin-left: 40px;
+    }
+
+    .airmusic-img {
+        max-width: 450px;
+    }
+
+    .airmusic-h1 {
+        margin: 60px 0 21px 0;
+        font-size: 30px;
+    }
+
+    .order-btn {
+        max-width: 200px;
+        font-size: 20px;
+    }
+
+    .specifications {
+        height: 700px;
+    }
+
+    .absolute-airpod {
+        max-width: 426px;
+        top: 28px;
+    }
+
+    .faq-circle {
+        width: 150px;
+        top: 560px;
+    }
+
+    .airmusic-circle {
+        margin-top: 50px;
+    }
+
+    .order-img {
+        max-width: 350px;
+    }
+
+    .order-content {
+        width: calc(100% - 350px);
+        padding-left: 20px;
+    }
+
+    .order-h2 {
+        margin-top: 80px;
+    }
+
+    .order-p {
+        margin: 30px 0 15px 0;
+        line-height: 2;
+    }
+
+    .price-1x {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+
+    .price-label {
+        font-size: 35px;
+    }
+
+    .price {
+        margin: 10px 0 10px 0;
+    }
+
+    .contact-h2 {
+        font-size: 30px;
+        position: relative;
+    }
+
+    .contact-h2::before {
+        width: 180px;
+        height: 5px;
+        top: 12px;
+        left: 120px;
+    }
+
+    .contact-h2::after {
+        width: 180px;
+        height: 5px;
+        top: 12px;
+        right: 120px;
+    }
+
+    .mid-p {
+        width: 300px;
+    }
+
+    .footer-left {
+        width: 275px;
+        height: 180px;
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .absolute-airpod {
+        max-width: 356px;
+        top: 96px;
+    }
+
+    .faq-circle {
+        width: 120px;
+        top: 540px;
+    }
+
+    .feature-wave {
+        width: 230px;
+        height: 230px;
+    }
+
+    .feature-label {
+        font-size: 25px;
+        margin: 20px 0 20px 0;
+    }
+
+    .feature-img.phone {
+        width: 68px;
+        height: 76px;
+    }
+
+    .feature-img.sound {
+        width: 108px;
+        height: 75px;
+    }
+
+    .feature-img.music {
+        width: 103px;
+        height: 78px;
+    }
+
+    .feature-img.lightstick {
+        width: 106px;
+        height: 90px;
+    }
+
+    .feature-img.mic {
+        width: 90px;
+        height: 90px;
+    }
+
+    .feature-img.star {
+        width: 108px;
+        height: 86px;
+    }
+
+    .airmusic-content {
+        width: calc(100% - 400px);
+    }
+
+    .inner-airmusic {
+        margin-left: 40px;
+    }
+
+    .airmusic-img {
+        max-width: 400px;
+    }
+
+    .airpod-case {
+        max-width: 250px;
+        height: 250px;
+        margin-top: -50px;
+        left: 100px;
+    }
+
+    .faq {
+        padding: 146px 20px 0 20px;
+    }
+
+    .order-img {
+        max-width: 300px;
+    }
+
+    .order-content {
+        width: calc(100% - 300px);
+    }
+
+    .order-h2 {
+        margin-top: 50px;
+    }
+
+    .order-p {
+        margin: 20px 0 15px 0;
+    }
+
+    .contact-h2::before {
+        width: 150px;
+        height: 5px;
+        top: 12px;
+        left: 110px;
+    }
+
+    .contact-h2::after {
+        width: 150px;
+        height: 5px;
+        top: 12px;
+        right: 110px;
+    }
+
+    .airpods-black {
+        height: 166px;
+    }
+
+    .mid-p {
+        width: 200px;
+    }
+
+    .footer-left {
+        width: 275px;
+        height: 180px;
+        top: 123px;
+    }
+
+    .footer-right {
+        width: 240px;
+        bottom: -1px;
+        height: 169px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-h1 {
+        font-size: 55px;
+    }
+
+    .airmusic {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .airmusic-img {
+        max-width: 760px;
+    }
+
+    .airmusic-content {
+        width: 100%;
+    }
+
+    .airmusic-circle {
+        width: 241px;
+        height: 120px;
+    }
+
+    .specifications-h3 {
+        padding: 100px 0 28px 0;
+    }
+
+    .inner-airmusic {
+        margin-left: 20px;
+    }
+
+    .airmusic-h1 {
+        font-family: 'Poppins';
+        font-size: 55px;
+        margin: 100px 0 41px 0;
+    }
+
+    .airmusic-p {
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2.5;
+        margin-bottom: 40px;
+    }
+
+    .absolute-airpod {
+        max-width: 250px;
+        top: 100px;
+    }
+
+    .specifications {
+        height: 550px;
+    }
+
+    .inner-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .airpod-case {
+        max-width: 180px;
+        height: 200px;
+        margin-top: -40px;
+        left: 50px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature-section {
+        padding-top: 240px;
+    }
+
+    .faq-circle {
+        display: none;
+    }
+
+    .order {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-p {
+        margin: 30px 0 22px 0;
+    }
+
+    .order-img {
+        max-width: 700px;
+    }
+
+    .order-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .faq-section {
+        margin-bottom: 80px;
+    }
+
+    .selectcolor {
+        gap: 20px;
+    }
+
+    .selectcolor-label {
+        font-size: 20px;
+    }
+
+    .order-btn {
+        max-width: 180px;
+        padding: 15px;
+    }
+
+    .price {
+        margin: 25px 0 30px 0;
+    }
+
+    .contact-h2::after {
+        display: none;
+    }
+
+    .contact-h2::before {
+        display: none;
+    }
+
+    .contact-box {
+        height: 50px;
+    }
+
+    .contact-box.wider {
+        height: 250px;
+    }
+
+    .footer-sp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-sp-img {
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .footer-left, .footer-right {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-mid {
+        max-width: 700px;
+        margin: 0;
+    }
+
+    .mid-p {
+        width: fit-content;
+    }
+
+    .top-btn {
+        width: 80px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .feature-wave {
+        width: 170px;
+        height: 170px;
+    }
+
+    .footer-sp-img {
+        max-width: 200px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .absolute-airpod {
+        max-width: 200px;
+        top: 110px;
+    }
+
+    .feature-wave {
+        width: 130px;
+        height: 130px;
+    }
+
+    .specifications-h3 {
+        font-size: 30px;
+        padding: 90px 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .absolute-airpod {
+        top: 70px;
+    }
+
+    .feature-section {
+        padding-top: 200px;
+    }
+
+    .footer-sp-img {
+        max-width: 150px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .header-h1 {
+        font-size: 50px;
+    }
+
+    .airmusic-h1 {
+        font-family: 'Poppins';
+        font-size: 28px;
+
+        .footer-sp-img {
+            max-width: 300px;
+            height: 200px;
+        }
+
+        margin: 50px 0 21px 0;
+    }
+
+    .faq {
+        padding: 120px 13px 0 13px;
+    }
+
+    .accordion-header {
+        position: relative;
+        padding: 15px 0px 16px 41px;
+        cursor: pointer;
+        height: 68px;
+        display: flex;
+        align-items: center;
+    }
+
+    .accordion-header::before {
+        left: 7px;
+        width: 20px;
+        height: 20px;
+        top: 30px;
+    }
+
+    .accordion-header::after {
+        left: 36px;
+    }
+
+    .accordion-header.active::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .accordion-content {
+        padding: 20px 20px 20px 41px;
+    }
+
+    .absolute-airpod {
+        max-width: 165px;
+        top: 70px;
+    }
+
+    .feature-wave {
+        width: 100px;
+        height: 100px;
+    }
+
+    .airmusic-circle {
+        width: 200px;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    .feature-section {
+        padding-top: 160px;
+    }
+
+    .airpod-case {
+        max-width: 150px;
+        height: 160px;
+        margin-top: -34px;
+        left: 50px;
+    }
+
+    .faq-section {
+        margin-bottom: 50px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-p {
+        margin: 28px 0 30px 0;
+    }
+
+    .contact-box {
+        height: 40px;
+    }
+
+    .contact-box.wider {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .absolute-airpod {
+        top: 35px;
+    }
+
+}

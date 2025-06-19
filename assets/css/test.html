@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+        }
+
+        .accordion-item {
+            flex: 0 1 calc(50% - 10px);
+            /* two columns */
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .accordion-header {
+            position: relative;
+            padding: 15px 20px 15px 50px;
+            cursor: pointer;
+            font-weight: 500;
+            background-color: #fff;
+        }
+
+        .accordion-header::before {
+            content: '';
+            background: url('../img/v.png') no-repeat center;
+            background-size: 100%;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active::before {
+            background: url('../img/v-hover.png') no-repeat center;
+            background-size: 100%;
+            transform: translateY(-50%) rotate(180deg);
+            /* arrow rotates */
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px 20px;
+            background-color: #fafafa;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .accordion-content.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">Lorem ipsum dolor sit amet,</div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">Lorem ipsum dolor sit amet,</div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/jquery.matchHeight.js"></script>
+    <script src="/assets/slick/slick.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".accordion-header").forEach(header => {
+                header.addEventListener("click", () => {
+                    header.classList.toggle("active");
+                    header.nextElementSibling.classList.toggle("show");
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
